@@ -116,13 +116,13 @@ h1, h2, h3, h4, h5, h6 {
 # Landing
 --------------------------------------------------------------*/
 #landing{
-  z-index: 9998;
+  z-index: 9997;
   position: fixed;
   height: 100vh;
   width: 100vw;
   color: #ffffff;
   font-size: 2rem;
-  background: url("../img/pexels-steve-johnson-2130475.jpg");
+  display: none;
 }
 
 #landing h1{
@@ -137,12 +137,30 @@ h1, h2, h3, h4, h5, h6 {
 
 #landing:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  display: none;
+}
+
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+      display: none;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+      display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -280,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/pexels-steve-johnson-2130475.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -293,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -306,11 +324,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #ffffff;
 }
 
 #hero p {
-  color: #45505b;
+  color: #ffffff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -326,9 +344,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 36px;
   display: inline-block;
-  color: #45505b;
+  color: #ffffff;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -563,7 +581,18 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
+.resume button {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
 
+.resume button:hover {
+  background: #0678e3;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/

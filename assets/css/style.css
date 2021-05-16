@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -324,11 +324,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #ffffff;
+  color: #272829;
 }
 
 #hero p {
-  color: #ffffff;
+  color: #272829;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -346,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 36px;
   display: inline-block;
-  color: #ffffff;
+  color: #272829;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -489,6 +489,10 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+#skills{
+  background: rgba(5, 99, 187, 0.1);
+}
+
 .skills .progress {
   height: 50px;
   display: block;
@@ -752,6 +756,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
